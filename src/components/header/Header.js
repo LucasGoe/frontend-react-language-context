@@ -27,7 +27,8 @@ function Header() {
                         </li>
                         <li className="language-switch">
                             <p>{content[activeLanguage].header.changeTo}</p>
-                            {activeLanguage === 'nl' ? <FlagNL onClick={toggleLanguage}/> :
+                            {activeLanguage === 'nl' ?
+                                <FlagNL onClick={toggleLanguage}/> :
                                 <FlagES onClick={toggleLanguage}/>}
                         </li>
                     </ul>
